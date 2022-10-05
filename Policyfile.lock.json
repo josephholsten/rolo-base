@@ -1,5 +1,5 @@
 {
-  "revision_id": "9bb242361c11c990b253fd9227aa46e86b32de1858691a7d7a6561516a4b7722",
+  "revision_id": "5e1ad33b1ee64a84cce7586f4c611d38f2abda8f770ca5aa8ce961b0b420e2c0",
   "name": "base",
   "run_list": [
     "recipe[base::default]"
@@ -8,27 +8,16 @@
 
   ],
   "cookbook_locks": {
-    "ark": {
-      "version": "6.0.4",
-      "identifier": "dc2c6c730cb7a74869039cd07d9e2d9c80df6924",
-      "dotted_decimal_identifier": "61973339174647719.20381662559894942.50150200273188",
-      "cache_key": "ark-6.0.4-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/ark/versions/6.0.4/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ark/versions/6.0.4/download",
-        "version": "6.0.4"
-      }
-    },
     "base": {
-      "version": "0.3.20",
-      "identifier": "8fe9b28ad91cb46c9373acb0cfd60d797d3949d8",
-      "dotted_decimal_identifier": "40507874712558772.30561422512541654.14815443110360",
+      "version": "0.4.1",
+      "identifier": "14c1905512541990ba5d26e2817f3eb16cf5cbab",
+      "dotted_decimal_identifier": "5842325180929049.40737305893437823.68931758181291",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "git@github.com:josephholsten/role-base.git",
-        "revision": "02d5cd0abd7d29341dd61ee68d40cc9980a79ce3",
+        "revision": "5500a418eea2bf2b8633f3436e5d137feef209fc",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
@@ -84,17 +73,6 @@
         "version": "6.1.0"
       }
     },
-    "git": {
-      "version": "11.1.1",
-      "identifier": "e7abde3fe7c273091175088432e5443e10948573",
-      "dotted_decimal_identifier": "65209690663404147.2552469142123237.75033356830067",
-      "cache_key": "git-11.1.1-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/git/versions/11.1.1/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/git/versions/11.1.1/download",
-        "version": "11.1.1"
-      }
-    },
     "nssm": {
       "version": "5.1.0",
       "identifier": "ce484045ee731a18304699a9e108d51092a801db",
@@ -126,17 +104,6 @@
       "source_options": {
         "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/rsyslog/versions/9.2.0/download",
         "version": "9.2.0"
-      }
-    },
-    "seven_zip": {
-      "version": "4.2.2",
-      "identifier": "a97443e4baa8bb56ef7aef7e085c8985fafa8423",
-      "dotted_decimal_identifier": "47697106013169851.24470159280179292.151208534377507",
-      "cache_key": "seven_zip-4.2.2-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/seven_zip/versions/4.2.2/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/seven_zip/versions/4.2.2/download",
-        "version": "4.2.2"
       }
     },
     "sudo": {
@@ -204,10 +171,6 @@
   "solution_dependencies": {
     "Policyfile": [
       [
-        "ark",
-        "= 6.0.4"
-      ],
-      [
         "base",
         ">= 0.0.0"
       ],
@@ -228,10 +191,6 @@
         "= 6.1.0"
       ],
       [
-        "git",
-        "= 11.1.1"
-      ],
-      [
         "nssm",
         "= 5.1.0"
       ],
@@ -242,10 +201,6 @@
       [
         "rsyslog",
         "= 9.2.0"
-      ],
-      [
-        "seven_zip",
-        "= 4.2.2"
       ],
       [
         "sudo",
@@ -269,13 +224,7 @@
       ]
     ],
     "dependencies": {
-      "ark (6.0.4)": [
-        [
-          "seven_zip",
-          ">= 3.1.0"
-        ]
-      ],
-      "base (0.3.20)": [
+      "base (0.4.1)": [
         [
           "chef_client_updater",
           ">= 0.0.0"
@@ -290,10 +239,6 @@
         ],
         [
           "firewall",
-          ">= 0.0.0"
-        ],
-        [
-          "git",
           ">= 0.0.0"
         ],
         [
@@ -339,12 +284,6 @@
       "firewall (6.1.0)": [
 
       ],
-      "git (11.1.1)": [
-        [
-          "ark",
-          ">= 0.0.0"
-        ]
-      ],
       "nssm (5.1.0)": [
 
       ],
@@ -352,9 +291,6 @@
 
       ],
       "rsyslog (9.2.0)": [
-
-      ],
-      "seven_zip (4.2.2)": [
 
       ],
       "sudo (5.4.7)": [

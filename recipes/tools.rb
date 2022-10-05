@@ -268,10 +268,10 @@
   # package "bazaar"
   # package "darcs"
   # package "mercurial"
-  include_recipe 'git'   # osx ships with 2.3.2, which is ancient
-  # package "hub"          # github cli # FIXME: github.com/github/hub
-  # package "ghq"          # rcs store # FIXME: github.com/x-motemen/ghq
-# package "josephholsten/josephholsten/hig"   # multi-rcs ui
+    package 'git'        # osx ships with 2.3.2, which is ancient
+  # package "hub"        # github cli   # FIXME: github.com/github/hub
+  # package "ghq"        # rcs store    # FIXME: github.com/x-motemen/ghq
+  # package "hig"        # multi-rcs ui # FIXME: github.com/josephholsten/hig
 # }
 
 ## }}
