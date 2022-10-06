@@ -1,5 +1,5 @@
 {
-  "revision_id": "3de024474e3041511aa3e8a79c16575f7158a59ee75d4c97f30748c2f9d42d4f",
+  "revision_id": "be9f06455a9163f5e40d8474f92496074d066e9c828d359283b820fcfa7f5ce2",
   "name": "base",
   "run_list": [
     "recipe[base::default]"
@@ -9,15 +9,15 @@
   ],
   "cookbook_locks": {
     "base": {
-      "version": "0.4.2",
-      "identifier": "04581d3ec13ecad459038b674f5b59e216646877",
-      "dotted_decimal_identifier": "1222782536990410.59770566821236571.98827573160055",
+      "version": "0.4.3",
+      "identifier": "7d468b9bcabe7ff056debb60f86f56c98774b7a7",
+      "dotted_decimal_identifier": "35261937516985983.67649509036980335.95423560988583",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "git@github.com:josephholsten/role-base.git",
-        "revision": "116523a2e7e4481d5abbdd33c73a1780e8f0cbbe",
+        "revision": "3cfa1a736e4b84d63a9d4c4bbbc03c721fef28e9",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
@@ -224,7 +224,7 @@
       ]
     ],
     "dependencies": {
-      "base (0.4.2)": [
+      "base (0.4.3)": [
         [
           "chef_client_updater",
           ">= 0.0.0"

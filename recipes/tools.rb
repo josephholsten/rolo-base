@@ -70,8 +70,7 @@
 # file watching {
     package "fswatch" do    # file change events
       if platform_family?('rhel')
-        case node[:platform_version]
-        when 9
+        if node['platform_version'].to_i == 9
           # epel 9 does not yet contain this package
           action :nothing
         end
