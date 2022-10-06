@@ -13,5 +13,5 @@ Policyfile.lock.json: ${files}
 	rm -f Policyfile.lock.json
 	chef install
 
-push:
-	chef push production Policyfile.rb -c ~/config/knife_config.rb
+push: Policyfile.lock.json
+	chef push production Policyfile.lock.json
