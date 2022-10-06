@@ -68,7 +68,15 @@
 # }
 
 # file watching {
-    package "fswatch"    # file change events
+    package "fswatch" do    # file change events
+      if platform_family?('rhel')
+        case node[:platform_version]
+        when 9
+          # epel 9 does not yet contain this package
+          action :nothing
+        end
+      end
+    end
   # package "watchexec"
   # package "watchr"
 # }
