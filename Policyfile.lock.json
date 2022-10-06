@@ -1,5 +1,5 @@
 {
-  "revision_id": "be9f06455a9163f5e40d8474f92496074d066e9c828d359283b820fcfa7f5ce2",
+  "revision_id": "2d992a9fdf3b60c7907fa60d0a03e04b20924b8b4b6bf4a4728a9e535a65fab8",
   "name": "base",
   "run_list": [
     "recipe[base::default]"
@@ -9,15 +9,15 @@
   ],
   "cookbook_locks": {
     "base": {
-      "version": "0.4.3",
-      "identifier": "7d468b9bcabe7ff056debb60f86f56c98774b7a7",
-      "dotted_decimal_identifier": "35261937516985983.67649509036980335.95423560988583",
+      "version": "0.4.5",
+      "identifier": "4921ab9b1c872ba3642137f3a96943efff6db40f",
+      "dotted_decimal_identifier": "20584694225340203.45990515039250793.74698061624335",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "git@github.com:josephholsten/role-base.git",
-        "revision": "3cfa1a736e4b84d63a9d4c4bbbc03c721fef28e9",
+        "revision": "3e308ea36c175e588aa6faddd1315e86bd5b6ea9",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
@@ -106,39 +106,6 @@
         "version": "9.2.0"
       }
     },
-    "sudo": {
-      "version": "5.4.7",
-      "identifier": "fa5823dc287643bdb92cb76362ebeabd0bd003da",
-      "dotted_decimal_identifier": "70465655218402883.53402372304757483.258097667900378",
-      "cache_key": "sudo-5.4.7-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/sudo/versions/5.4.7/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/sudo/versions/5.4.7/download",
-        "version": "5.4.7"
-      }
-    },
-    "ubuntu": {
-      "version": "3.0.3",
-      "identifier": "95369da087f1893e9851f4892f63c546227cae82",
-      "dotted_decimal_identifier": "41999822160916873.17618926318464867.216905016979074",
-      "cache_key": "ubuntu-3.0.3-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/ubuntu/versions/3.0.3/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ubuntu/versions/3.0.3/download",
-        "version": "3.0.3"
-      }
-    },
-    "ufw": {
-      "version": "3.2.3",
-      "identifier": "1a08762ddda32fe0b38457b3a736f35059e30def",
-      "dotted_decimal_identifier": "7327653063140143.63247775771633462.267526430985711",
-      "cache_key": "ufw-3.2.3-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/ufw/versions/3.2.3/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/ufw/versions/3.2.3/download",
-        "version": "3.2.3"
-      }
-    },
     "user": {
       "version": "0.7.0",
       "identifier": "20811bf2f6e62596d99c589bee75acca7475c0da",
@@ -203,18 +170,6 @@
         "= 9.2.0"
       ],
       [
-        "sudo",
-        "= 5.4.7"
-      ],
-      [
-        "ubuntu",
-        "= 3.0.3"
-      ],
-      [
-        "ufw",
-        "= 3.2.3"
-      ],
-      [
         "user",
         "= 0.7.0"
       ],
@@ -224,7 +179,7 @@
       ]
     ],
     "dependencies": {
-      "base (0.4.3)": [
+      "base (0.4.5)": [
         [
           "chef_client_updater",
           ">= 0.0.0"
@@ -247,18 +202,6 @@
         ],
         [
           "rsyslog",
-          ">= 0.0.0"
-        ],
-        [
-          "sudo",
-          ">= 0.0.0"
-        ],
-        [
-          "ubuntu",
-          ">= 0.0.0"
-        ],
-        [
-          "ufw",
           ">= 0.0.0"
         ],
         [
@@ -292,18 +235,6 @@
       ],
       "rsyslog (9.2.0)": [
 
-      ],
-      "sudo (5.4.7)": [
-
-      ],
-      "ubuntu (3.0.3)": [
-
-      ],
-      "ufw (3.2.3)": [
-        [
-          "firewall",
-          ">= 2.0.0"
-        ]
       ],
       "user (0.7.0)": [
 
