@@ -8,5 +8,5 @@ include_recipe 'base::chef'
 # include_recipe 'base::nolo'
 
 # system configuration
-include_recipe 'base::user'
-include_recipe 'base::tools'
+include_recipe 'base::utilizadores'
+include_recipe 'base::utensiles'
