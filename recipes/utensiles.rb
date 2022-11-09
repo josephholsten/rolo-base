@@ -21,14 +21,15 @@
     package "editorconfig"  # improved modeline
     package "parallel"      # improved xargs
   # package "pstree"        # improved ps
-    package "watch" do      # improved while true do; ... done
+    package 'procps' do     # provided watch(1), improved while true do; ... done
       case node[:platform]
       when 'redhat', 'centos', 'oracle'
         package_name 'procps-ng'
       else
-        package_name 'watch'
+        package_name 'procps'
       end
     end
+
   # package "tree"          # improved ls -r
   # package "par"           # improved fmt
   # package "multitail"     # improved tail
