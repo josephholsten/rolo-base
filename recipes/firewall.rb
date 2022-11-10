@@ -1,3 +1,10 @@
 firewalld 'default'
 
-firewalld_service 'ssh'
+firewalld_zone 'public' do
+  interfaces node['network']['interfaces'].keys
+  services [
+    'dhcpv6-client',
+    'ssh',
+    'mosh'
+  ]
+end
