@@ -1,5 +1,5 @@
 {
-  "revision_id": "7d7fca58bbf84a8f12bdb9a7ef7ba572d5cd7ef44bcac6549cf8c612836999ef",
+  "revision_id": "432d75743091d870ea5b9cfa55bdfd48b42a8dc4330151be42d5cd74cdf627d7",
   "name": "base",
   "run_list": [
     "recipe[base::default]"
@@ -9,20 +9,19 @@
   ],
   "cookbook_locks": {
     "base": {
-      "version": "0.5.3",
-      "identifier": "a965cc6d5edc257fec049df0d71bd8e088b1cbe5",
-      "dotted_decimal_identifier": "47681199746767909.36006826616084251.238458877627365",
+      "version": "0.5.5",
+      "identifier": "1b945570112fadbc86af6a6ae4e24145c5b6ce59",
+      "dotted_decimal_identifier": "7762919044493229.53065383584392418.71767925640793",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "git@github.com:josephholsten/role-base.git",
-        "revision": "b85987ee76b8ad519ae69ff24240e464ef57eeb0",
+        "revision": "4782fc719d612ad60b5372478dcb5adf275ddea2",
         "working_tree_clean": false,
-        "published": true,
+        "published": false,
         "synchronized_remote_branches": [
-          "origin/HEAD -> origin/master",
-          "origin/master"
+
         ]
       },
       "source_options": {
@@ -41,36 +40,36 @@
       }
     },
     "consul": {
-      "version": "5.3.2",
-      "identifier": "fb229001067466a432aa89308ddf08708a5e4ccc",
-      "dotted_decimal_identifier": "70688221042209894.46217604208037343.9279450795212",
-      "cache_key": "consul-5.3.2-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/consul/versions/5.3.2/download",
+      "version": "5.5.1",
+      "identifier": "34c2d0ad1807bc202736631008fe79bbfafe6169",
+      "dotted_decimal_identifier": "14850900301973436.9050313798453502.133848276820329",
+      "cache_key": "consul-5.5.1-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/consul/versions/5.5.1/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/consul/versions/5.3.2/download",
-        "version": "5.3.2"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/consul/versions/5.5.1/download",
+        "version": "5.5.1"
       }
     },
     "fail2ban": {
-      "version": "7.0.4",
-      "identifier": "813930780fa1f9117860e1229c6f6dc4f8915181",
-      "dotted_decimal_identifier": "36373152331178489.4917432093416559.120692751290753",
-      "cache_key": "fail2ban-7.0.4-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/fail2ban/versions/7.0.4/download",
+      "version": "7.0.11",
+      "identifier": "b1417c950b58b69770520444a7b7750fc09e9d42",
+      "dotted_decimal_identifier": "49893074210085046.42626219044546487.128710516579650",
+      "cache_key": "fail2ban-7.0.11-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/fail2ban/versions/7.0.11/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/fail2ban/versions/7.0.4/download",
-        "version": "7.0.4"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/fail2ban/versions/7.0.11/download",
+        "version": "7.0.11"
       }
     },
     "firewall": {
-      "version": "6.1.0",
-      "identifier": "a4fa09afd2fe9ef9431f9481905f9e43b46de7bc",
-      "dotted_decimal_identifier": "46436815692037790.70161072115519583.174013627099068",
-      "cache_key": "firewall-6.1.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/firewall/versions/6.1.0/download",
+      "version": "6.2.7",
+      "identifier": "73c5eaf41493357620cb9558d9ca6d5bd3dd70a6",
+      "dotted_decimal_identifier": "32587235229733685.33250106007935434.120241163956390",
+      "cache_key": "firewall-6.2.7-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/firewall/versions/6.2.7/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/firewall/versions/6.1.0/download",
-        "version": "6.1.0"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/firewall/versions/6.2.7/download",
+        "version": "6.2.7"
       }
     },
     "nssm": {
@@ -96,25 +95,14 @@
       }
     },
     "rsyslog": {
-      "version": "9.2.0",
-      "identifier": "2f846675ac7b684b1691fb52b112d3d8e1c6e98b",
-      "dotted_decimal_identifier": "13374899501169512.21135439495868690.232928454306187",
-      "cache_key": "rsyslog-9.2.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/rsyslog/versions/9.2.0/download",
+      "version": "9.2.5",
+      "identifier": "f61abfaae9fee0d674c0ba63033cdc5e692eb5ad",
+      "dotted_decimal_identifier": "69272254779358944.60364016125674300.242298049705389",
+      "cache_key": "rsyslog-9.2.5-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/rsyslog/versions/9.2.5/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/rsyslog/versions/9.2.0/download",
-        "version": "9.2.0"
-      }
-    },
-    "user": {
-      "version": "0.7.0",
-      "identifier": "20811bf2f6e62596d99c589bee75acca7475c0da",
-      "dotted_decimal_identifier": "9149156295108133.42460512031338101.189985537245402",
-      "cache_key": "user-0.7.0-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/user/versions/0.7.0/download",
-      "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/user/versions/0.7.0/download",
-        "version": "0.7.0"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/rsyslog/versions/9.2.5/download",
+        "version": "9.2.5"
       }
     },
     "yum-epel": {
@@ -147,15 +135,15 @@
       ],
       [
         "consul",
-        "= 5.3.2"
+        "= 5.5.1"
       ],
       [
         "fail2ban",
-        "= 7.0.4"
+        "= 7.0.11"
       ],
       [
         "firewall",
-        "= 6.1.0"
+        "= 6.2.7"
       ],
       [
         "nssm",
@@ -167,11 +155,7 @@
       ],
       [
         "rsyslog",
-        "= 9.2.0"
-      ],
-      [
-        "user",
-        "= 0.7.0"
+        "= 9.2.5"
       ],
       [
         "yum-epel",
@@ -179,7 +163,7 @@
       ]
     ],
     "dependencies": {
-      "base (0.5.3)": [
+      "base (0.5.5)": [
         [
           "chef_client_updater",
           ">= 0.0.0"
@@ -203,28 +187,24 @@
         [
           "rsyslog",
           ">= 0.0.0"
-        ],
-        [
-          "user",
-          ">= 0.0.0"
         ]
       ],
       "chef_client_updater (3.12.3)": [
 
       ],
-      "consul (5.3.2)": [
+      "consul (5.5.1)": [
         [
           "nssm",
           ">= 5.1.0"
         ]
       ],
-      "fail2ban (7.0.4)": [
+      "fail2ban (7.0.11)": [
         [
           "yum-epel",
           ">= 0.0.0"
         ]
       ],
-      "firewall (6.1.0)": [
+      "firewall (6.2.7)": [
 
       ],
       "nssm (5.1.0)": [
@@ -233,10 +213,7 @@
       "packagecloud (1.0.1)": [
 
       ],
-      "rsyslog (9.2.0)": [
-
-      ],
-      "user (0.7.0)": [
+      "rsyslog (9.2.5)": [
 
       ],
       "yum-epel (4.5.0)": [
