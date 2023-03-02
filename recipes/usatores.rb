@@ -33,7 +33,7 @@ directory "#{user_home}/.ssh" do
 end
 
 template "#{user_home}/.ssh/authorized_keys" do
-  cookbook    'role-base'
+  cookbook    'base'
   source      'authorized_keys.erb'
   owner       user_name
   group       user_name

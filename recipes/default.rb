@@ -8,6 +8,6 @@ include_recipe 'rsyslog::client'
 # include_recipe 'base::nolo'
 
 # system configuration
-include_recipe 'base::utilizadores'
+include_recipe 'base::usatores'
 include_recipe 'base::utensiles'
 include_recipe 'base::sudo'
