@@ -1,12 +1,19 @@
-files = metadata.rb \
+files = \
+	attributes/consul.rb \
+	attributes/default.rb \
+	metadata.rb \
 	Policyfile.rb \
+	recipes/blank_slate.rb \
 	recipes/chef.rb \
 	recipes/consul.rb \
 	recipes/default.rb \
 	recipes/firewall.rb \
+	recipes/mosh.rb \
 	recipes/nolo.rb \
+	recipes/sudo.rb \
+	recipes/usatores.rb \
 	recipes/utensiles.rb \
-	recipes/utilizadores.rb
+	templates/authorized_keys.erb 
 
 Policyfile.lock.json: ${files}
 	rm -f Policyfile.lock.json
