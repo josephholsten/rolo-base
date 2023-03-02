@@ -18,7 +18,6 @@ user user_name do
   home        user_home
   shell       user_shell
   system      false
-  non_unique  true
   manage_home true
   action      :create
 end
