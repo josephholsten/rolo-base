@@ -10,3 +10,4 @@ include_recipe 'rsyslog::client'
 # system configuration
 include_recipe 'base::utilizadores'
 include_recipe 'base::utensiles'
+include_recipe 'base::sudo'

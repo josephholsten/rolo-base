@@ -1,5 +1,5 @@
 {
-  "revision_id": "1a7e2419226766cfe8bf178370baf3d2f7c90a64885de14fa24e20c9f6708037",
+  "revision_id": "7d7fca58bbf84a8f12bdb9a7ef7ba572d5cd7ef44bcac6549cf8c612836999ef",
   "name": "base",
   "run_list": [
     "recipe[base::default]"
@@ -10,18 +10,19 @@
   "cookbook_locks": {
     "base": {
       "version": "0.5.3",
-      "identifier": "cce7b18c9143389a8f6eca3b626e7ac61479eaed",
-      "dotted_decimal_identifier": "57675645002531640.43504852415505006.134991165647597",
+      "identifier": "a965cc6d5edc257fec049df0d71bd8e088b1cbe5",
+      "dotted_decimal_identifier": "47681199746767909.36006826616084251.238458877627365",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "git@github.com:josephholsten/role-base.git",
-        "revision": "4736359e360d1a8c7903f5b89db8609fcdc1269d",
+        "revision": "b85987ee76b8ad519ae69ff24240e464ef57eeb0",
         "working_tree_clean": false,
-        "published": false,
+        "published": true,
         "synchronized_remote_branches": [
-
+          "origin/HEAD -> origin/master",
+          "origin/master"
         ]
       },
       "source_options": {
