@@ -1,5 +1,3 @@
-unless platform_family?('rhel') && node['platform_version'].to_i == 9
-  package 'mosh'
+package 'mosh'
 
-  # ensure base::firewall has service 'mosh' in the active zone
-end
+# ensure base::firewall has service 'mosh' in the active zone
