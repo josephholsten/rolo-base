@@ -4,7 +4,7 @@
 # - service is scheduled
 
 chef_client_updater 'Install latest Chef Infra Client 17.x' do
-  version '17'
+  version '18'
 end
 
 chef_client_config 'Chef Infra Client Config' do
