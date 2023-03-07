@@ -1,5 +1,5 @@
 name 'base'
-version '0.5.10'
+version '0.5.11'
 
 depends 'chef_client_updater'
 depends 'yum-epel'
