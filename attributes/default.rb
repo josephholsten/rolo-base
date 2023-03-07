@@ -3,5 +3,7 @@ default["base"]["chef_infra_version"] = "17"
 
 default["fail2ban"]["logtarget"] = 'SYSLOG'
 
+default["yum"]["epel"]["enabled"] = true
+
 # TODO: https://www.papertrail.com/help/encrypting-remote-syslog-with-tls-ssl/#rsyslog
 # Required: default["rsyslog"]["custom_remote"]
