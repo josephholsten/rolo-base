@@ -1,0 +1,23 @@
+#cloud-config
+write_files:
+- path: /etc/cinc/client.rb
+  permissions: '0644'
+  owner: root:root
+  content: |
+    chef_server_url "${chef_server_url}"
+    json_attribs "/etc/cinc/firstboot.json"
+
+- path: /etc/cinc/validation.pem
+  permissions: '0644'
+  owner: root:root
+  content: ${jsonencode(chef_validation_key)}
+
+- path: /etc/cinc/firstboot.json
+  permissions: '0644'
+  owner: root:root
+  content: |
+    ${jsonencode(chef_json_attributes)}
+
+runcmd:
+- "curl -L https://omnitruck.cinc.sh/install.sh | bash -s -- -v 18"
+- "/bin/chef-client"
