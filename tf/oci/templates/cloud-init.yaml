@@ -16,7 +16,7 @@ write_files:
   permissions: '0644'
   owner: root:root
   content: |
-    ${jsonencode(chef_json_attributes)}
+    ${jsonencode(chef_attributes)}
 
 runcmd:
 - "curl -L https://omnitruck.cinc.sh/install.sh | bash -s -- -v 18"
