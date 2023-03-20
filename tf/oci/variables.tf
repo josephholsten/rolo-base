@@ -41,7 +41,7 @@ variable "subnet" {
 
 variable "enable_public_address" {
   description = "whether to assign a public address to the instance"
-  default     = false
+  default     = true
 }
 
 variable "instance_count" {
@@ -59,11 +59,6 @@ variable "instance_flavor" {
   type = map(any)
 }
 
-variable "instance_disk_image_id" {
-  description = "image to boot from"
-  default     = "Oracle Linux"
-}
-
 variable "instance_disk_size_gb" {
   description = "storage disk size in GiB"
   default     = "20"
@@ -71,6 +66,11 @@ variable "instance_disk_size_gb" {
 
 variable "ssh_public_key" {
   description = "SSH public key"
+}
+
+variable "instance_ipxe_script" {
+  description = "Chef validation key"
+  default = ""
 }
 
 variable "chef_server_url" {

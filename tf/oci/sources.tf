@@ -5,8 +5,8 @@ data "oci_identity_availability_domain" "ad" {
 
 locals {
   chef_attributes = {
-    profile_name = var.role
-    profile_environment = var.environment
+    policy_name = var.role
+    policy_group = var.environment
   }
 }
 

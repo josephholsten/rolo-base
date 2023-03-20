@@ -1,17 +1,3 @@
-data "oci_core_images" "oracle_images" {
-  compartment_id           = var.compartment
-  # operating_system         = var.instance_disk_image_os
-  # operating_system_version = var.instance_disk_image_os_version
-  # shape                    = lookup(var.instance_flavor, "shape", "VM.Standard.E4.Flex")
-  # sort_by                  = "TIMECREATED"
-}
-
-locals {
-  # instance_image_id = data.oci_core_images.oracle_images.images.0.id
-  instance_image_id = var.instance_disk_image_id
-}
-
-
 resource "oci_core_instance" "instance" {
   count = var.instance_count
 
@@ -21,13 +7,13 @@ resource "oci_core_instance" "instance" {
   compartment_id = var.compartment
 
   shape = lookup(var.instance_flavor, "shape", "VM.Standard.E4.Flex")
-#   dynamic "shape_config" {
-#     for_each = length(regexall("Flex", lookup(var.instance_shape, "shape", "VM.Standard.E4.Flex"))) > 0 ? [1] : []
-#     content {
-#       ocpus         = max(1, lookup(var.instance_shape, "ocpus", 1))
-#       memory_in_gbs = (lookup(var.instance_shape, "memory", 4) / lookup(var.instance_shape, "ocpus", 1)) > 64 ? (lookup(var.instance_shape, "ocpus", 1) * 4) : lookup(var.instance_shape, "memory", 4)
-#     }
-#   }
+  dynamic "shape_config" {
+    for_each = length(regexall("Flex", lookup(var.instance_flavor, "shape", "VM.Standard.E4.Flex"))) > 0 ? [1] : []
+    content {
+      ocpus         = lookup(var.instance_flavor, "ocpus", 1)
+      memory_in_gbs = lookup(var.instance_flavor, "memory", 4)
+    }
+  }
 
 #   launch_options {
 #     boot_volume_type = "PARAVIRTUALIZED"
@@ -69,4 +55,5 @@ resource "oci_core_instance" "instance" {
     user_data           = data.cloudinit_config.instance.rendered
   }
 #   freeform_tags  = var.freeform_tags
+  ipxe_script = var.instance_ipxe_script
 }
