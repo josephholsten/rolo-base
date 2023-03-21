@@ -7,7 +7,7 @@ files = \
 	recipes/chef.rb \
 	recipes/consul.rb \
 	recipes/default.rb \
-	recipes/firewall.rb \
+	recipes/taliafoco.rb \
 	recipes/mosh.rb \
 	recipes/nolo.rb \
 	recipes/sudo.rb \
