@@ -5,7 +5,8 @@
 # command shell {
   # package "bash"  # osx default is 3.2.57
   # package "dash"  # posix sh, now included in osx
-    package "zsh"   # osx ships with 5.7.1
+    package "ksh"
+  # package "zsh"   # osx ships with 5.7.1
   # package "zsh-completions"  # zsh shell completions
 # }
 

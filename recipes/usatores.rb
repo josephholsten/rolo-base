@@ -5,7 +5,7 @@ end
 
 user_name    = 'j'
 user_comment = 'Joseph Anthony Pasquale Holsten'
-user_shell   = '/bin/zsh'
+user_shell   = '/usr/bin/ksh'
 user_home    = "/home/#{user_name}"
 user_ssh_keys = [
   'ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINr+NtScZF5bGoEVD/S3PZgQEY3DKJlSkdeZUspuBRIn isha',
