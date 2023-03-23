@@ -3,8 +3,9 @@
 # - service is configured, &
 # - service is scheduled
 
-chef_client_updater 'Install latest Chef Infra Client 17.x' do
+chef_client_updater 'Install latest Chef Infra Client' do
   version '18'
+  product_name 'cinc'
 end
 
 chef_client_config 'Chef Infra Client Config' do
