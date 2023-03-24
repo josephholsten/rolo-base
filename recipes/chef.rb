@@ -6,6 +6,7 @@
 chef_client_updater 'Install latest Chef Infra Client' do
   version '18'
   product_name 'cinc'
+  rubygems_url 'https://packagecloud.io/cinc-project/stable'
 end
 
 chef_client_config 'Chef Infra Client Config' do
