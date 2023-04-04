@@ -1,4 +1,4 @@
-if  platform_family?('debian') or platform_family?('rhel')
+if platform_family?('debian') or platform_family?('rhel')
   firewalld 'default'
 
   firewalld_zone 'public' do
