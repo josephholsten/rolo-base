@@ -9,6 +9,8 @@ if platform_family?('debian') or platform_family?('rhel')
       'mosh'
     ]
   end
+
+  include_recipe 'fail2ban'
 else
   # TODO: PF on OpenBSD, macOS, FreeBSD, Solaris
   # TODO: IPF on Illumos
