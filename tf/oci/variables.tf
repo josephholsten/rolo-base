@@ -68,8 +68,13 @@ variable "ssh_public_key" {
   description = "SSH public key"
 }
 
+variable "instance_cloudinit_script_path" {
+  description = "Cloud Init script path"
+  default = "templates/cloud-init.yaml"
+}
+
 variable "instance_ipxe_script" {
-  description = "Chef validation key"
+  description = "iPXE script"
   default = ""
 }
 

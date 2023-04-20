@@ -18,7 +18,7 @@ data "cloudinit_config" "instance" {
     filename     = "instance.yaml"
     content_type = "text/cloud-config"
     content = templatefile(
-      "templates/cloud-init.yaml", {
+      var.instance_cloudinit_script_path, {
         chef_server_url = var.chef_server_url
         chef_validation_key = var.chef_validation_key
         chef_attributes = local.chef_attributes
