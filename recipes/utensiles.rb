@@ -18,11 +18,18 @@
 # }
 
 # core tools {
-  # package "coreutils"     # gnu tooling, almost entirely for realpath
-    package "editorconfig"  # improved modeline
-    package "parallel"      # improved xargs
-  # package "pstree"        # improved ps
-    package 'procps' do     # provided watch(1), improved while true do; ... done
+  # package "coreutils"        # gnu tooling, almost entirely for realpath
+    package 'editorconfig' do  # improved modeline
+      case node['platform_family']
+      when 'freebsd'
+        package_name 'editorconfig-core-c'
+      else
+        package_name 'editorconfig'
+      end
+    end
+    package "parallel"        # improved xargs
+  # package "pstree"          # improved ps
+    package 'procps' do       # provided watch(1), improved while true do; ... done
       case node[:platform]
       when 'redhat', 'centos', 'oracle'
         package_name 'procps-ng'
@@ -31,11 +38,11 @@
       end
     end
 
-  # package "tree"          # improved ls -r
-  # package "par"           # improved fmt
-  # package "multitail"     # improved tail
-  # package "less"          # improved more
-  # package "nixpp"         # shorthands w/ posix fallbacks
+  # package "tree"            # improved ls -r
+  # package "par"             # improved fmt
+  # package "multitail"       # improved tail
+  # package "less"            # improved more
+  # package "nixpp"           # shorthands w/ posix fallbacks
   package 'stow' # dotfile installer
   package 'git'
   package 'vim' do
