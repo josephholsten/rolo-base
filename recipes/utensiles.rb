@@ -29,9 +29,11 @@
     end
     package "parallel"        # improved xargs
   # package "pstree"          # improved ps
-    package 'procps' do       # provided watch(1), improved while true do; ... done
-      case node[:platform]
-      when 'redhat', 'centos', 'oracle'
+    package 'procps' do       # provides watch(1), improved while true do; ... done
+      case node['platform_family']
+      when 'freebsd'
+        package_name 'gnu-watch'
+      when 'rhel'
         package_name 'procps-ng'
       else
         package_name 'procps'
