@@ -123,7 +123,10 @@
 
 ## System Administration {{
 
-  package 'iotop'
+  if platform_family?('rhel')
+    # iotop is linux only
+    package 'iotop'
+  end
   package 'lsof'
 
 # system call tracing {
