@@ -1,5 +1,6 @@
 # support services
 include_recipe 'base::chef'
+include_recipe 'base::tailscale'
 include_recipe 'base::mosh'
 include_recipe 'base::taliafoco'
 include_recipe 'rsyslog::client'
