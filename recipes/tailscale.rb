@@ -2,7 +2,7 @@
 # vide https://tailscale.com/download
 
 # configure repo
-case node['platform_version']
+case node['platform_family']
 when 'rhel'
   # dnf config-manager --add-repo https://pkgs.tailscale.com/stable/rhel/9/tailscale.repo
   yum_repository 'tailscale' do
