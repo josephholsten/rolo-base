@@ -1,7 +1,7 @@
 resource "oci_core_instance" "instance" {
   count = var.instance_count
 
-  display_name = "${var.role}-${count.index+1}${var.cohort}"
+  display_name = format("%s-%03x%s", var.role, count.index+1, var.cohort)
 
   availability_domain = data.oci_identity_availability_domain.ad.name
   compartment_id = var.compartment

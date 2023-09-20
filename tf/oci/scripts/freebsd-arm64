@@ -1,0 +1,3 @@
+#!/bin/sh
+
+terraform apply --var-file=./vars/common.tfvars --var-file=./vars/freebsd-arm64.tfvars

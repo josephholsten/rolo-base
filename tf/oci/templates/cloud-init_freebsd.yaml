@@ -5,7 +5,7 @@ write_files:
   owner: root:wheel
   content: |
     chef_server_url "${chef_server_url}"
-    json_attribs "/etc/cinc/firstboot.json"
+    json_attribs "/etc/chef/firstboot.json"
 - path: /etc/chef/validation.pem
   permissions: '0644'
   owner: root:wheel
@@ -21,4 +21,4 @@ packages:
   - rubygem-chef-bin
 
 runcmd:
-- "/bin/chef-client"
+- "/usr/local/bin/chef-client --chef-license accept"
