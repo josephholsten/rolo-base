@@ -130,9 +130,12 @@
   package 'lsof'
 
 # system call tracing {
-  # package 'truss'
+  # freebsd: 'truss'
+  # illumos: 'dtrace'
+  if platform_family?('rhel')
+    # strace is linux only
     package 'strace'
-  # package 'dtrace'
+  end
 # }
 
 
