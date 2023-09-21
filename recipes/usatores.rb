@@ -22,6 +22,8 @@ user_ssh_keys = [
   'ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBAi45VJG07ufOPkWLD3Dnnmi1Bn9n34Mnx4X2pjKYx7qLEsClsDMbIMiqbPzSB5BgisQEyyVouefYsf7D23uNJ8= zohre:blink',
 ]
 
+chef_gem 'ruby-shadow'
+
 user user_name do
   comment     user_comment
   home        user_home
