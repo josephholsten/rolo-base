@@ -5,7 +5,7 @@ end
 
 user_name    = 'j'
 user_comment = 'Joseph Anthony Pasquale Holsten'
-user_shell   = case node['platform_version']
+user_shell   = case node['platform_family']
 when 'rhel'
   '/bin/ksh'
 when 'freebsd'
