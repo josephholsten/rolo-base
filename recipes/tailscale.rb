@@ -9,7 +9,6 @@ when 'rhel'
     repositoryid   'tailscale-stable'
     name           'Tailscale stable'
     baseurl        'https://pkgs.tailscale.com/stable/rhel/9/$basearch'
-    type           'rpm'
     repo_gpgcheck  true
     gpgkey         'https://pkgs.tailscale.com/stable/rhel/9/repo.gpg'
 
