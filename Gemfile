@@ -1,3 +1,3 @@
-source :rubygems
+source 'https://rubygems.org'
 
-gem 'chef', '>= 10.14'
+gem 'chef-cli'

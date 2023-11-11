@@ -1,3 +1,5 @@
+package 'sudo'
+
 sudo 'wheel' do
   groups    %w(admin wheel sudo)
   users     %w(root)

@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# boot to chef run
+
+# authentication to systems
+# - [x] 1Password in Firefox
+# - [x] Tailscale
+# - [x] Github
+# - [ ] 1Password CLI
+# - [ ] Chef
+# - [ ] Domain Join
+# - [ ] Hashi Vault
+# - [ ] NFS
+

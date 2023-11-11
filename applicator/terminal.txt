@@ -1,0 +1,202 @@
+xterm
+kitty
+konsole
+coreterminal
+mrxvt
+rxvt
+mate-terminal
+stjterm
+elementary-terminal
+gnome-terminal
+mate-terminal
+qterminal
+terminal.app
+xfce4-terminal
+
+alacritty/makefile:comment=	gpu-accelerated terminal emulator
+alacritty/pkg-descr:alacritty is the fastest terminal emulator in existence.  using the
+alacritty/pkg-descr:features like tabs or scroll back as in other terminals.  instead, it
+alacritty/pkg-descr:goal means it should be faster than any other terminal emulator
+alacritty/pkg-descr:is expected that users of alacritty make use of a terminal multiplexer
+aminal/makefile:comment=	golang terminal emulator from scratch
+aminal/pkg-descr:aminal as your main terminal for a while.
+aminal/pkg-descr:minal is a modern terminal emulator for mac/linux/bsd implemented in golang and
+aterm/makefile:comment=	color vt102 terminal emulator with transparency support
+aterm/pkg-descr:aterm is a color vt102 terminal emulator, based on rxvt 2.4.8 with
+conlecterm/makefile:comment=	multi tabbed terminal for rxvt/xterm/emacs
+conlecterm/pkg-descr:this is a multi tabbed terminal that uses embedded windows and a gtk
+cool-retro-term/pkg-descr:cool-retro-term is a terminal emulator which mimics the look and feel of the
+coreterminal/makefile:		-e 's|/usr/bin/coreterminal|${prefix}/bin/coreterminal|g' \
+coreterminal/makefile:plist_files=	bin/coreterminal \
+coreterminal/makefile:portname=	coreterminal
+coreterminal/makefile:www=		https://gitlab.com/cubocore/coreterminal
+coreterminal/distinfo:sha256 (cubocore-coreterminal-679b317d1612dcdd54596ba5bf313d60bebc808e_gl0.tar.gz) = 610e380a6b738a80fb6d871d19dd9979f32155255fafd2e7733b92536d713c18
+coreterminal/distinfo:size (cubocore-coreterminal-679b317d1612dcdd54596ba5bf313d60bebc808e_gl0.tar.gz) = 74556
+coreterminal/files/patch-coreterminal.cpp: 	qfont terminalfont = smi->getvalue("coreterminal", "font");
+coreterminal/files/patch-coreterminal.cpp:+++ coreterminal.cpp
+coreterminal/files/patch-coreterminal.cpp:--- coreterminal.cpp.orig	2022-06-05 22:56:33 utc
+coreterminal/pkg-descr:coreterminal is terminal emulator from the cubocore suite of simple,
+elementary-terminal/makefile:glib_schemas=	io.elementary.terminal.gschema.xml
+elementary-terminal/makefile:portname=	terminal
+elementary-terminal/makefile:www=		https://github.com/elementary/terminal
+elementary-terminal/distinfo:sha256 (elementary-terminal-6.1.1_gh0.tar.gz) = 22d86fd35735195a5b93b74697e11569339447887ae121c654a86f486a8ed48b
+elementary-terminal/distinfo:size (elementary-terminal-6.1.1_gh0.tar.gz) = 1037361
+elementary-terminal/files/patch-data_io.elementary.terminal.gschema.xml:       <description>defines the encoding to be used by the terminal.</description>
+elementary-terminal/files/patch-data_io.elementary.terminal.gschema.xml:       <description>the default font of the terminal. use [font name] [property] [size]. eg. droid sans mono 12.</description>
+elementary-terminal/files/patch-data_io.elementary.terminal.gschema.xml:       <summary>the default font of the terminal.</summary>
+elementary-terminal/files/patch-data_io.elementary.terminal.gschema.xml:+++ data/io.elementary.terminal.gschema.xml
+elementary-terminal/files/patch-data_io.elementary.terminal.gschema.xml:--- data/io.elementary.terminal.gschema.xml.orig	2021-07-15 21:30:31 utc
+elementary-terminal/files/patch-data_meson.build:     args: join_paths(meson.current_build_dir (), 'open-pantheon-terminal-here.desktop')
+elementary-terminal/files/patch-data_meson.build:-    'pantheon_terminal_process_completion_notifications.fish',
+elementary-terminal/files/patch-src_widgets_terminalwidget.vala:                 /* no terminal warning needed */
+elementary-terminal/files/patch-src_widgets_terminalwidget.vala:+                "pantheon_terminal_id=" + terminal_id
+elementary-terminal/files/patch-src_widgets_terminalwidget.vala:-                                                  "--session --dest=io.elementary.terminal " +
+elementary-terminal/files/patch-src_widgets_terminalwidget.vala:-                                                  "/io/elementary/terminal " +
+elementary-terminal/files/patch-src_widgets_terminalwidget.vala:-                                                  "io.elementary.terminal.processfinished " +
+elementary-terminal/files/patch-src_widgets_terminalwidget.vala:-                "pantheon_terminal_id=" + terminal_id,
+elementary-terminal/files/patch-src_widgets_terminalwidget.vala:-                // export id so we can identify the terminal for which the process completion is reported
+elementary-terminal/pkg-descr:a super lightweight, beautiful, and simple terminal. comes with sane defaults,
+elementary-terminal/pkg-plist:bin/io.elementary.terminal
+eterm/makefile:comment?=	x11 terminal emulator based on rxvt/xterm
+eterm/pkg-descr:eterm is a color vt102 terminal emulator intended as a replacement for
+evilvte/makefile:comment=	vte based, super lightweight terminal emulator
+evilvte/pkg-descr:evilvte is a terminal emulator.  it supports almost everything vte provides.
+eww/makefile.crates:		terminal_size-0.1.17 \
+eww/distinfo:sha256 (rust/crates/terminal_size-0.1.17.crate) = 633c1a546cee861a1a6d0dc69ebeca693bf4296661ba7852b9d21d159e0506df
+eww/distinfo:size (rust/crates/terminal_size-0.1.17.crate) = 9141
+fbpanel/files/patch-exec__make_profile.in:             opt="$opt -e s/x-terminal/$terminal/"
+fbpanel/files/patch-exec__make_profile.in:         if which $terminal 2> /dev/null > /dev/null; then
+fbpanel/files/patch-exec__make_profile.in:     local browser terminal filer
+fbpanel/files/patch-exec__make_profile.in:+    for terminal in x-terminal terminal konsole roxterm xterm; do
+fbpanel/files/patch-exec__make_profile.in:-    for terminal in x-terminal urxvt gnome-terminal; do
+foot/makefile:comment=	fast, lightweight and minimalistic wayland terminal emulator
+foot/pkg-descr:a fast, lightweight and minimalistic wayland terminal emulator.
+foot/pkg-message:  foot|foot terminal emulator:\
+gdm/files/patch-daemon_gdm-session-worker.c:                 if (needs_controlling_terminal) {
+gmrun/files/patch-config_gmrunrc:@@ -7,7 +7,8 @@ terminal = gnome-terminal --start-factory-server --use
+gmrun/pkg-descr:	* can spawn commands in a terminal
+gnome-console/makefile:comment=	minimal terminal for gnome
+gnome-console/pkg-descr:console is a minimal terminal for gnome
+gnome-console/pkg-descr:console is supposed to be a simple terminal emulator for the average user
+gnome-console/pkg-descr:serve the casual linux user who rarely needs a terminal
+gnome-pie/pkg-message:in a terminal run the command
+gnome-terminal/pkg-descr:default terminal emulator for the gnome desktop.
+gnustep-app/makefile:		terminal.app>0:x11/terminal.app \
+gtkterm2/makefile:comment=	simple gtk-2 terminal with tabs
+guake/makefile:comment=	dropdown terminal made for the gnome desktop
+guake/files/patch-guake_terminal.py:+++ guake/terminal.py
+guake/files/patch-guake_terminal.py:--- guake/terminal.py.orig	2018-10-09 15:32:50 utc
+guake/pkg-descr:guake is a dropdown terminal made for the gnome desktop environment,
+jbxvt/pkg-descr:jbxvt is an xcb-based terminal emulator implementing modern terminal
+kickoff/makefile.crates:		is-terminal-0.4.2 \
+kickoff/distinfo:sha256 (rust/crates/is-terminal-0.4.2.crate) = 28dfb6c8100ccc63462345b67d1bbc3679177c75ee4bf59bf29c8b1d110b8189
+kickoff/distinfo:size (rust/crates/is-terminal-0.4.2.crate) = 7577
+kitty/makefile:comment=	cross-platform, fast, featureful, gpu-based terminal emulator
+kitty/pkg-descr:kitty is the fast, featureful, gpu based terminal emulator.
+kitty/pkg-descr:kitty is designed from the ground up to support all modern terminal
+konsole/makefile:comment=	kde terminal emulator
+konsole/pkg-descr:konsole is a terminal program for kde.
+konsole/pkg-descr:to provide easy access to a terminal window. konsole's features and
+lilyterm/makefile:comment=	lightweight, but functional terminal emulator
+lilyterm/pkg-descr:a lightweight, but functional terminal emulator.
+luit/pkg-descr:application and a utf-8 terminal emulator.
+lxde-meta/makefile:		lxterminal:sysutils/lxterminal \
+ly/files/patch-res_config.ini: # terminal reset command (tput is faster)
+ly/files/patch-src_login.c: 	reset_terminal(pwd);
+ly/files/pkg-message.in:modify the command field of the ttyv1 terminal entry in /etc/ttys
+mate-desktop/makefile:		org.mate.applications-terminal.gschema.xml \
+mate-terminal/makefile:glib_schemas=	org.mate.terminal.gschema.xml
+mate-terminal/makefile:portname=	mate-terminal
+mate-terminal/makefile:shebang_files=	mate-terminal.wrapper
+mate-terminal/distinfo:sha256 (mate/mate-terminal-1.26.0.tar.xz) = 7727e714c191c3c55e535e30931974e229ca5128e052b62ce74dcc18f7eaaf22
+mate-terminal/distinfo:size (mate/mate-terminal-1.26.0.tar.xz) = 2095052
+mate-terminal/files/patch-src_terminal-screen.c:+++ src/terminal-screen.c	2012-07-27 17:03:08.000000000 -0500
+mate-terminal/files/patch-src_terminal-screen.c:--- src/terminal-screen.c.orig	2012-07-27 16:58:59.000000000 -0500
+mate-terminal/files/patch-src_terminal.c:+++ src/terminal.c	2012-07-27 16:57:20.000000000 -0500
+mate-terminal/files/patch-src_terminal.c:--- src/terminal.c.orig	2012-07-27 16:57:04.000000000 -0500
+mate-terminal/pkg-descr:default terminal emulator for the mate desktop.
+mate/makefile:		mate-terminal:x11/mate-terminal \
+mlterm/makefile:comment=	multilingual x11 terminal emulator
+mlterm/pkg-descr:mlterm is a multilingual x11 terminal emulator.
+mrxvt-devel/makefile:# maximal number of terminals
+mrxvt-devel/makefile:desktop_entries=	"mrxvt" "mrxvt terminal emulator" \
+mrxvt-devel/pkg-descr:multi-tabbed x terminal emulator based on the popular rxvt and
+mrxvt-devel/pkg-descr:terminal emulators, like gnome-terminal and konsole, but keep to
+mrxvt/pkg-descr:multi-tabbed x terminal emulator based on the popular rxvt and
+mrxvt/pkg-descr:terminal emulators, like gnome-terminal and konsole, but keep to
+multi-aterm/makefile:comment=	multi terminal based on aterm
+multi-aterm/pkg-descr:a multi terminal based on aterm.
+p5-xterm-conf/pkg-descr:xterm and compatible terminal emulators (e.g. rxvt or urxvt).
+py-i3-quickterm/makefile:comment=	drop-down "quake style" terminal for i3 and sway
+py-i3-quickterm/pkg-descr:a small drop-down terminal for i3wm and sway, supporting your preferred
+py-i3-quickterm/pkg-descr:terminal emulator, is multi-monitor and screen-width aware, and plays
+qterminal/makefile:comment=	lightweight qt-based terminal emulator
+qterminal/makefile:portname=	qterminal
+qterminal/makefile:www=		https://github.com/lxqt/qterminal
+qterminal/distinfo:sha256 (lxqt/qterminal-1.2.0.tar.xz) = d9410a74899d50b0648510c738483244a1502d308276ce4b7b74b85ef716a45f
+qterminal/distinfo:size (lxqt/qterminal-1.2.0.tar.xz) = 217432
+qterminal/pkg-descr:lightweight qt-based terminal emulator.
+rofi/makefile:		script/rofi-sensible-terminal
+roxterm/makefile:comment=	gtk+ terminal emulator with tabs
+roxterm/pkg-descr:a tabbed, vte- (gtk+) based terminal emulator providing advanced
+rxvt-unicode/makefile:comment=	clone of the terminal emulator rxvt modified to support unicode
+rxvt-unicode/pkg-descr:rxvt-unicode is a clone of the well known terminal emulator rxvt, modified
+sakura/pkg-descr:gnome-terminal, xfce terminal, termit and a small sample program included in
+sakura/pkg-descr:have a decent terminal emulator. current terminal emulators based on vte are
+sakura/pkg-descr:notebook to provide several terminals in one window and adds a contextual
+sakura/pkg-descr:sakura is a terminal emulator based on gtk and vte. it's a terminal emulator
+slim/files/patch-slim.conf:+# the x server needs to be started on an unused virtual terminal,
+sterm/makefile:comment=	simple x terminal
+sterm/makefile:scrollback_desc=	scroll back through terminal output
+sterm/pkg-descr:st is a minimalistic x terminal.
+stjerm/makefile:comment=	gtk+-based quake-like terminal emulator
+stjerm/pkg-descr:stjerm is a roll-down, quake-like terminal emulator that shows up on keyboard
+swayimg/pkg-descr:now you can view images directly in the current terminal window!
+swayrbar/makefile.crates:		is-terminal-0.4.2 \
+swayrbar/distinfo:sha256 (rust/crates/is-terminal-0.4.2.crate) = 28dfb6c8100ccc63462345b67d1bbc3679177c75ee4bf59bf29c8b1d110b8189
+swayrbar/distinfo:size (rust/crates/is-terminal-0.4.2.crate) = 7577
+terminal.app/makefile:portname=	terminal.app
+terminal.app/pkg-descr:terminal provides terminal emulation in a gnustep environment. it gives
+terminal.app/pkg-descr:colorized terminals with configurable fonts, and also allows users to configure
+terminator/makefile:comment=	multiple gnome terminals in one window
+terminator/pkg-descr:terminator is a python terminal program, using the same widget as
+terminator/pkg-descr:gnome-terminal to provide a tiled set of terminals in as little
+terminology/pkg-descr:terminology is a terminal emulator bristling with advanced features including:
+tilda/makefile:comment=	drop down x11 terminal with transparency support
+tilda/files/patch-src_tilda_terminal.c:+++ src/tilda_terminal.c
+tilda/files/patch-src_tilda_terminal.c:--- src/tilda_terminal.c.orig	2022-10-30 15:03:03 utc
+tilda/pkg-descr:tilda is a x11 terminal taking after the likeness of many classic
+tilda/pkg-descr:terminals from first person shooter games, quake, doom and half-life
+tilda/pkg-descr:to name a few, where the terminal has no border and is hidden from
+tilix/makefile:comment=	tiling terminal emulator using gtk+ 3
+tilix/pkg-descr:* input can be synchronized between terminals so commands typed in one terminal
+tilix/pkg-descr:* layout terminals in any fashion by splitting them horizontally or vertically
+tilix/pkg-descr:* quake mode support (i.e. drop-down terminal)
+tilix/pkg-descr:* the grouping of terminals can be saved and loaded from disk
+tilix/pkg-descr:tilix is a tiling terminal emulator which uses the vte gtk+ 3 widget with the
+urxvt-font-size/makefile:comment=	perl extension for rxvt-unicode terminal emulator to change font size
+urxvt-perls/makefile:comment=	perl extension scripts for rxvt-unicode terminal emulator
+urxvt-perls/pkg-descr:a small collection of perl extensions for the rxvt-unicode terminal emulator.
+wezterm/makefile:	${cp} ${wrksrc}/assets/icon/terminal.png \
+wezterm/makefile:	icon/terminal.png icon/${portname}-icon.svg shell-integration/${portname}.sh
+wezterm/makefile:comment=	gpu-accelerated terminal emulator and multiplexer
+wezterm/pkg-descr:  (most other terminal emulators do not support as many render
+wezterm/pkg-descr:- multiplex terminal panes, tabs and windows on local and remote
+wezterm/pkg-descr:wezterm is a gpu-accelerated cross-platform terminal emulator and
+wezterm/pkg-message:  wezterm|wez's terminal emulator:\
+x3270/pkg-descr:3270 terminal emulator under x or console.
+xcmd/pkg-descr:run commands inside a terminal window (using `--cmd')
+xdialog/pkg-descr:"cdialog" programs. it converts any terminal based program into a
+xfce4-goodies/makefile:terminal_run_depends=		xfce4-terminal>=0:x11/xfce4-terminal
+xfce4-terminal/makefile:portname=	xfce4-terminal
+xfce4-terminal/distinfo:sha256 (xfce4/xfce4-terminal-1.0.4.tar.bz2) = 78e55957af7c6fc1f283e90be33988661593a4da98383da1b0b54fdf6554baf4
+xfce4-terminal/distinfo:size (xfce4/xfce4-terminal-1.0.4.tar.bz2) = 1009367
+xterm/pkg-descr:the xterm program is the standard terminal emulator for the x
+xterm/pkg-descr:compatible terminals for programs that can't use the window
+xterm/pkg-descr:terminal resizing capabilities (for example, the sigwinch
+xvkbd/pkg-descr:be used for systems without a hardware keyboard such as kiosk terminals
+xvt/makefile:desktop_entries=	"xvt" "xvt terminal emulator" \
+yakuake/makefile:comment=	drop-down terminal emulator for kde
+yakuake/pkg-descr:yakuake is a quake-style drop-down terminal emulator using kde konsole's
+yeahconsole/pkg-descr:yeahconsole is a terminal wrapper for creating drop-down consoles, similar
+
