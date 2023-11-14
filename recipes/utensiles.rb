@@ -68,7 +68,7 @@
   # package "ack"
   # package "the_silver_searcher"    # ack -> c
   # package "the_platinum_searcher"  # ack -> go
-  # package "ripgrep"                # ack -> rust # FIXME github.com/BurntSushi/ripgrep
+    package "ripgrep"                # ack -> rust # FIXME github.com/BurntSushi/ripgrep
 # }
   
 # fuzzy item select (ia:seliger pie:leg la:lego la:seligo gmc:pikkōną gmc:keusaną gmc:plukkōną) {
@@ -108,7 +108,7 @@
   # package "jo"              # json output
   # package "path-extractor"  # path extractor # FIXME github.com/edi9999/path-extractor
   # package "urlview"         # extract urls from emails
-# }
+  # }
 
 # compression {
   # package "unzip"     # born:1989-03-03, deflate

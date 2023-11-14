@@ -1,5 +1,5 @@
 {
-  "revision_id": "18cd1e1b8f905418275c07610dfea8962d380470862ed9fdf3c9d5a4f225c2f3",
+  "revision_id": "5209796bf7dd496f7af414569dc4a4a9c34ca5677283921d8ec50a485e0f8927",
   "name": "base",
   "run_list": [
     "recipe[base::default]"
@@ -9,15 +9,15 @@
   ],
   "cookbook_locks": {
     "base": {
-      "version": "0.6.5",
-      "identifier": "fa5e7061bb209e2718a2732a1b332edf8d0ec94f",
-      "dotted_decimal_identifier": "70472580946665630.11004610087623475.51537679141199",
+      "version": "0.6.6",
+      "identifier": "f0901f3a59c5115a0d7a30469849de234e377df7",
+      "dotted_decimal_identifier": "67712458207905041.25347566351063113.244243217481207",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": "ssh://git@github.com/josephholsten/rolo-base.git",
-        "revision": "d94e48c7610fb059d42ee6b15d56c5367cd74188",
+        "revision": "bf501e2d52dbd5a3487e28f7bc5d270045c3b470",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
@@ -164,7 +164,7 @@
       ]
     ],
     "dependencies": {
-      "base (0.6.5)": [
+      "base (0.6.6)": [
         [
           "chef_client_updater",
           ">= 0.0.0"
