@@ -1,0 +1,63 @@
+#!/bin/sh
+# bootstrap-linux-el
+
+PROGNAME=$(basename $0)
+set -x
+set -e
+
+if [ -f .env ]; then
+  . .env
+fi
+
+if [ -"${chef_server_url}"- = -- ]; then
+  echo "\$chef_server_url environment variable undefined; please export or set in .env"
+  exit 1
+fi
+if [ -"${chef_validation_key}"- = -- ]; then
+  echo "\$chef_validation_key environment variable undefined; please export or set in .env"
+  exit 1
+fi
+if [ -"${chef_attributes}"- = -- ]; then
+  echo "\$chef_attributes environment variable undefined; please export or set in .env"
+  exit 1
+fi
+
+chef_version=18
+
+# curl -L https://omnitruck.cinc.sh/install.sh |
+	# bash -s -- -P cinc -v "${chef_version}"
+curl -L https://omnitruck.chef.io/install.sh |
+	bash -s -- -P chef -v "${chef_version}"
+
+
+mkdir -p /etc/chef
+
+CLIENTCFG=$(mktemp -t ${PROGNAME}-chef-client-cfg)
+cat > ${CLIENTCFG} <<EOF
+chef_server_url "${chef_server_url}"
+json_attribs "/etc/chef/firstboot.json"
+EOF
+install -o root -g wheel -m 640 \
+  ${CLIENTCFG} \
+  /etc/chef/client.rb
+rm ${CLIENTCFG}
+
+VALIDATOR=$(mktemp -t ${PROGNAME}-chef-validator)
+cat > ${VALIDATOR} <<EOF
+${chef_validation_key}
+EOF
+install -o root -g wheel -m 400 \
+  ${VALIDATOR} \
+  /etc/chef/validation.pem
+rm ${VALIDATOR}
+
+NODECFG=$(mktemp -t ${PROGNAME}-chef-node-cfg)
+cat > ${NODECFG} <<EOF
+${chef_attributes}
+EOF
+install -o root -g wheel -m 640 \
+  ${NODECFG} \
+  /etc/chef/firstboot.json
+rm ${NODECFG}
+
+/opt/bin/chef-client --chef-license accept

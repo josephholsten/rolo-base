@@ -1,0 +1,7 @@
+#!/bin/sh
+set -x
+
+op=${1}
+shift
+
+terraform ${op} --var-file=./vars/common.tfvars --var-file=./vars/freebsd-arm64.tfvars

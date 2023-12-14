@@ -1,4 +1,5 @@
 #!/bin/sh
+# bootstrap-freebsd
 
 PROGNAME=$(basename $0)
 set -x
