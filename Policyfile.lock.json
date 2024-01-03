@@ -1,5 +1,5 @@
 {
-  "revision_id": "5209796bf7dd496f7af414569dc4a4a9c34ca5677283921d8ec50a485e0f8927",
+  "revision_id": "84a4ddbe01754cf66b2c549aeb0ce72c3e468354bbc129932e9f09f34589dc97",
   "name": "base",
   "run_list": [
     "recipe[base::default]"
@@ -9,15 +9,15 @@
   ],
   "cookbook_locks": {
     "base": {
-      "version": "0.6.6",
-      "identifier": "f0901f3a59c5115a0d7a30469849de234e377df7",
-      "dotted_decimal_identifier": "67712458207905041.25347566351063113.244243217481207",
+      "version": "0.6.8",
+      "identifier": "409505d8b36636ed6c587bef66f23c4d95c0d2ad",
+      "dotted_decimal_identifier": "18178250852492854.66828696772634354.66303922590381",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
-        "remote": "ssh://git@github.com/josephholsten/rolo-base.git",
-        "revision": "bf501e2d52dbd5a3487e28f7bc5d270045c3b470",
+        "remote": "git@github.com:josephholsten/rolo-base.git",
+        "revision": "ec32418f5a0f35426744e039c1f0576d1a9f7928",
         "working_tree_clean": false,
         "published": true,
         "synchronized_remote_branches": [
@@ -63,14 +63,14 @@
       }
     },
     "firewall": {
-      "version": "6.3.3",
-      "identifier": "3d37852a5121cb30bee0a88cacd27fa7cb0ad37d",
-      "dotted_decimal_identifier": "17231018659488203.13720670991854802.140358642750333",
-      "cache_key": "firewall-6.3.3-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/firewall/versions/6.3.3/download",
+      "version": "6.3.4",
+      "identifier": "f0c7171ca9ccd9843771c8dd0e45d9c6409eeedc",
+      "dotted_decimal_identifier": "67772896489622745.37215658766569029.239445510909660",
+      "cache_key": "firewall-6.3.4-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/firewall/versions/6.3.4/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/firewall/versions/6.3.3/download",
-        "version": "6.3.3"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/firewall/versions/6.3.4/download",
+        "version": "6.3.4"
       }
     },
     "nssm": {
@@ -96,25 +96,25 @@
       }
     },
     "rsyslog": {
-      "version": "9.2.16",
-      "identifier": "63294ac4347d26c4103c6a00ba390f52e6054a4d",
-      "dotted_decimal_identifier": "27911423790447910.55186947097803321.16848720841293",
-      "cache_key": "rsyslog-9.2.16-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/rsyslog/versions/9.2.16/download",
+      "version": "9.2.17",
+      "identifier": "a971029e5772ac77805504d85e27b896d23431af",
+      "dotted_decimal_identifier": "47693527124505260.33636624870432295.202957911241135",
+      "cache_key": "rsyslog-9.2.17-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/rsyslog/versions/9.2.17/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/rsyslog/versions/9.2.16/download",
-        "version": "9.2.16"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/rsyslog/versions/9.2.17/download",
+        "version": "9.2.17"
       }
     },
     "yum-epel": {
-      "version": "5.0.5",
-      "identifier": "99badb562b6cc8043d1f4ba3588435a994f2d56d",
-      "dotted_decimal_identifier": "43271122643021000.1193104529119364.59002464687469",
-      "cache_key": "yum-epel-5.0.5-supermarket.chef.io",
-      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/yum-epel/versions/5.0.5/download",
+      "version": "5.0.6",
+      "identifier": "272e1b87682471e663b88472c11f8450052207c9",
+      "dotted_decimal_identifier": "11028219862459505.64848888790696223.145479218366409",
+      "cache_key": "yum-epel-5.0.6-supermarket.chef.io",
+      "origin": "https://supermarket.chef.io:443/api/v1/cookbooks/yum-epel/versions/5.0.6/download",
       "source_options": {
-        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/yum-epel/versions/5.0.5/download",
-        "version": "5.0.5"
+        "artifactserver": "https://supermarket.chef.io:443/api/v1/cookbooks/yum-epel/versions/5.0.6/download",
+        "version": "5.0.6"
       }
     }
   },
@@ -144,7 +144,7 @@
       ],
       [
         "firewall",
-        "= 6.3.3"
+        "= 6.3.4"
       ],
       [
         "nssm",
@@ -156,15 +156,15 @@
       ],
       [
         "rsyslog",
-        "= 9.2.16"
+        "= 9.2.17"
       ],
       [
         "yum-epel",
-        "= 5.0.5"
+        "= 5.0.6"
       ]
     ],
     "dependencies": {
-      "base (0.6.6)": [
+      "base (0.6.8)": [
         [
           "chef_client_updater",
           ">= 0.0.0"
@@ -209,7 +209,7 @@
           ">= 0.0.0"
         ]
       ],
-      "firewall (6.3.3)": [
+      "firewall (6.3.4)": [
 
       ],
       "nssm (5.1.0)": [
@@ -218,10 +218,10 @@
       "packagecloud (2.0.6)": [
 
       ],
-      "rsyslog (9.2.16)": [
+      "rsyslog (9.2.17)": [
 
       ],
-      "yum-epel (5.0.5)": [
+      "yum-epel (5.0.6)": [
 
       ]
     }

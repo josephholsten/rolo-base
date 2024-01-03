@@ -68,14 +68,7 @@
   # package "ack"
   # package "the_silver_searcher"    # ack -> c
   # package "the_platinum_searcher"  # ack -> go
-    switch node[:platform_family]
-    case 'rhel'
-      yum_repository 'ripgrep' do
-        name           'Copr repo for ripgrep owned by carlwgeorge'
-        baseurl        'https://download.copr.fedorainfracloud.org/results/carlwgeorge/ripgrep/epel-7-$basearch/'
-        gpgkey         'https://download.copr.fedorainfracloud.org/results/carlwgeorge/ripgrep/pubkey.gpg'
-      end
-    end
+
     package 'ripgrep'                # ack -> rust # FIXME github.com/BurntSushi/ripgrep
 # }
   
