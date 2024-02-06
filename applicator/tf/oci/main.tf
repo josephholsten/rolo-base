@@ -35,8 +35,8 @@ resource "oci_core_instance" "instance" {
 #     kms_key_id  = var.boot_volume_encryption_key
   }
 
-#   agent_config {
-#     are_all_plugins_disabled = false
+  agent_config {
+    are_all_plugins_disabled = true
 #     is_management_disabled   = false
 #     is_monitoring_disabled   = false
 
@@ -48,7 +48,7 @@ resource "oci_core_instance" "instance" {
 #       desired_state = "DISABLED"
 #       name          = "OS Management Service Agent"
 #     }
-#   }
+  }
 
   metadata = {
     ssh_authorized_keys = var.ssh_public_key
